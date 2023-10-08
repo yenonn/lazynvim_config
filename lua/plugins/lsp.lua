@@ -2,11 +2,15 @@ return {
   -- add symbols-outline
   {
     "simrat39/symbols-outline.nvim",
+    event = "VeryLazy",
     cmd = "SymbolsOutline",
     keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
     opts = {
       -- add your options that should be passed to the setup() function here
       position = "right",
+      highlight_hovered_item = true,
+      show_symbol_details = true,
+      show_numbers = true,
       symbols = {
         File = { icon = "", hl = "@text.uri" },
         Module = { icon = "", hl = "@namespace" },

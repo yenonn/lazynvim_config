@@ -1,7 +1,7 @@
 return {
   {
     "pocco81/auto-save.nvim",
-    event = "VeryLazy",
+    event = "CursorHold",
     -- keys = { "<leader>", ":ASToggle<CR>" },
     opts = {
       enabled = true, -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
